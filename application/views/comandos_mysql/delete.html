@@ -1,0 +1,16 @@
+$def with(datos)
+<a href="/"><h1>Delete</h1></a>
+
+
+<form method="POST">
+  <label for="id_comando">Id del comando</label>
+  <input type="text" readonly="true" value="$datos.id_comando" id="id_comando" name="id_comando">
+  <br>
+  <label for="comando">Comando</label>
+  <input type="comando" readonly="true" value="$datos.comando" id="comando" name="comando">
+  <br>
+  <label for="funcion">Funcion</label>
+  <input type="funcion" readonly="true" value="$datos.funcion" id="funcion" name="funcion">
+  <br>
+  <button type="submit" class="btn btn-primary">Delete</button>
+</form>

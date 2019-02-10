@@ -1,0 +1,19 @@
+$def with(datos)
+
+<h1>Base de datos</h1>
+<a href="/insert">Insert</a>
+
+<table>
+    <th>Id_comando</th>
+    <th>Comando</th>
+    <th>Update</th>
+    <th>Delete</th>
+    $for row in datos:
+        <tr>
+            <td>$row.id_comando</td>
+            <td>$row.comando</td>
+            <td>$row.funcion</td>            
+            <td><a href="/delete/$row.id_comando">Delete</a></td>
+            <td><a href="/update/$row.id_comando">Update</a></td>
+        </tr>
+</table>
